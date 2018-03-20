@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+body{
+    -webkit-animation:fadein 2s ease 1;
+}
+@-webkit-keyframes fadein{
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.dot1{
+    position:fixed;
+    width: 10px;
+    height: 10px;
+    border: 1px transparent;
+    border-radius: 8px;
+    top: 44%;
+    left: 47%;
+    /*background: -webkit-linear-gradient(left top, #D588EA, #9AB3FC);*/
+    background: #333333;
+    -webkit-animation: opacity 1s ease 0s normal forwards, move 1s ease 0s infinite forwards;
+    -webkit-box-shadow: #f8f8f8 0px 12px 4px;
+}
+.dot2{
+    position:fixed;
+    width: 10px;
+    height: 10px;
+    border: 1px transparent;
+    border-radius: 8px;
+    top: 44%;
+    left: 49%;
+    /*background: -webkit-linear-gradient(left top, #9AB3FC, #EC99C1);*/
+    background: #333333;
+    -webkit-animation: opacity 1s ease 0.2s normal forwards, move 1s ease 0.2s infinite forwards;
+    -webkit-box-shadow: #f8f8f8 0px 12px 4px;
+}
+.dot3{
+    position:fixed;
+    width: 10px;
+    height: 10px;
+    border: 1px transparent;
+    border-radius: 8px;
+    top: 44%;
+    left: 51%;
+    /*background: -webkit-linear-gradient(left top, #D5B9FF, #E8617F);*/
+    background: #333333;
+    -webkit-animation: opacity 1s ease 0.4s normal forwards, move 1s ease 0.4s infinite forwards;
+    -webkit-box-shadow: #f8f8f8 0px 12px 4px;
+}
+.dot4{
+    position:fixed;
+    width: 10px;
+    height: 10px;
+    border: 1px transparent;
+    border-radius: 8px;
+    top: 44%;
+    left: 53%;
+    /*background: -webkit-linear-gradient(left top, #E8617F, #FAAE62);*/
+    background: #333333;
+    -webkit-animation: opacity 1s ease 0.6s normal forwards, move 1s ease 0.6s infinite forwards;
+    -webkit-box-shadow: #f8f8f8 0px 12px 4px;
+}
+@-webkit-keyframes move {
+    0% {
+        transform: translateY(5px);
+        animation-timing-function: ease;
+    }
+    50% {
+        transform: translateY(-5px);
+        animation-timing-function: ease;
+    }
+    100% {
+        transform: translateY(5px);
+        animation-timing-function: ease;
+    }
+}
+@-webkit-keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
