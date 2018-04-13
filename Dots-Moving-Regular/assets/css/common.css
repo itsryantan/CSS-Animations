@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+body{
+    -webkit-animation:fadein 2s ease 1;
+}
+@-webkit-keyframes fadein{
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.dot1{
+    position:fixed;
+    width: 10px;
+    height: 10px;
+    border: 1px transparent;
+    border-radius: 8px;
+    top: 50%;
+    left: 50%;
+    background: #333333;
+    -webkit-animation: opacity 1s ease 0s normal forwards, move 4s ease 0s infinite forwards;
+    -webkit-box-shadow: #f8f8f8 0px 12px 4px;
+}
+.dot2{
+    position:fixed;
+    width: 10px;
+    height: 10px;
+    border: 1px transparent;
+    border-radius: 8px;
+    top: 50%;
+    left: 50%;
+    background: #333333;
+    -webkit-animation: opacity 2s ease 0s normal forwards, move 4s ease 1s infinite forwards;
+    -webkit-box-shadow: #f8f8f8 0px 12px 4px;
+}
+.dot3{
+    position:fixed;
+    width: 10px;
+    height: 10px;
+    border: 1px transparent;
+    border-radius: 8px;
+    top: 50%;
+    left: 50%;
+    background: #333333;
+    -webkit-animation: opacity 3s ease 0s normal forwards, move 4s ease 2s infinite forwards;
+    -webkit-box-shadow: #f8f8f8 0px 12px 4px;
+}
+.dot4{
+    position:fixed;
+    width: 10px;
+    height: 10px;
+    border: 1px transparent;
+    border-radius: 8px;
+    top: 50%;
+    left: 50%;
+    background: #333333;
+    -webkit-animation: opacity 4s ease 0s normal forwards, move 4s ease 3s infinite forwards;
+    -webkit-box-shadow: #f8f8f8 0px 12px 4px;
+}
+@-webkit-keyframes move {
+    0% {
+        transform: translate(40px,-20px);
+        animation-timing-function: ease;
+    }
+    25% {
+        transform: translate(-20px,-40px);
+        animation-timing-function: ease;
+    }
+    50% {
+        transform: translate(-40px,20px);
+        animation-timing-function: ease;
+    }
+    75% {
+        transform: translate(20px,40px);
+        animation-timing-function: ease;
+    }
+    100% {
+        transform: translate(40px,-20px);
+        animation-timing-function: ease;
+    }
+}
+@-webkit-keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
